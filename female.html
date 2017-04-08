@@ -19,10 +19,16 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-content" style="max-width:1400px; background-color:pink;">
 
 <!-- Header -->
+<!-- Header -->
 <header class="w3-container w3-center w3-padding-32"> 
-  <h1><img src = "GJFemale.png" style="height:200px"></h1>
-  <p> The GenderJournal for <span class="w3-tag">females</span>.</p>
+  <h1><img src = "GJMale.png" style="height:200px"></h1>
+  <p><span class="w3-tag">This GenderJournal for <select name="forma" onchange="location = this.value;">
+ <option value="female.html">females</option>
+ <option value="male.html">males</option>
+ <option value="other.html">others</option>
+</select></span>.</p>
 </header>
+
 
 <!-- Grid -->
 <div class="w3-row">

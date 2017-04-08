@@ -1,32 +1,43 @@
+<!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+<title>GenderJournal: Main</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('background.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
 <body>
 
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top" style="color:black;">GENDERJOURNAL</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+  
+  	<h2 style="color:black;text-align:center;">Please select your gender: <br>
+  	<select name="forma" onchange="location = this.value;">
+ <option value="female.html">female</option>
+ <option value="male.html">male</option>
+ <option value="other.html">other</option>
+</select></h2>
 
-<p>
-This is a GenderJournal.
-</p>
+    <p class="w3-large w3-center"></p>
+  </div>
 
-<p>
-Please select your gender:
-</p>
 
-<button id="maleButton" class="float-left submit-button" >MALE</button>
 
-<script type="text/javascript">
-    document.getElementById("maleButton").onclick = function () {
-        location.href = "male.html";
-    };
-</script>
-
-<button id="femaleButton" class="float-left submit-button" >FEMALE</button>
-
-<script type="text/javascript">
-    document.getElementById("femaleButton").onclick = function () {
-        location.href = "female.html";
-    };
-</script>
-
+  <div class="w3-display-bottomleft w3-padding-large" style="color:black;">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> & Ms. Florio.
+  </div>
+</div>
 
 </body>
 </html>

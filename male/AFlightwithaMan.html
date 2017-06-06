@@ -1,135 +1,80 @@
-<!--from W3 schools-->
-
 <!DOCTYPE html>
 <html>
-<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-div.container {
-    width: 100%;
-    border: 1px solid gray;
-}
-
-header, footer {
-    padding: 1em;
-    color: white;
-    background-color: cornflowerblue;
-    clear: left;
-    text-align: center;
-}
-
-nav {
-    float: left;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-   
-nav ul a {
-    text-decoration: none;
-}
-
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-</head>
-<body>
+<body class="w3-black">
 
-<div class="container">
 
-<header>
-   <img src = "GJMale.png" style="height:200px">
-</header>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    
+<a href="../male/male.html"><img src="GJMale.png" alt="boy" height="200"></a>
   
-<nav>
-  <p><span class="w3-tag">This GenderJournal is for <select name="forma" onchange="location = this.value;">
+
+ <p><span class="w3-tag">This GenderJournal is for <select name="forma" onchange="location = this.value;">
  <option value="../male/male.html">males</option>
- <option value="../other/other.html">others</option>
  <option value="../female/female.html">females</option>
+ <option value="../other/other.html">others</option>
 </select></span>.</p>
-<br>
-<h4><b>Welcome!</b></h4>
-      <p>This is my GenderJournal project for AP English. This website was created off of a template made by W3 schools, edited by yours truly. To change your gender, select the button labeled <i>males</i>.</p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
 
-</nav>
-
-<article>
-  <h1>A Sheep's Adventure</h1>
-  <p>Inspired by a class discussion.</p>
-</article>
+<p>This is my GenderJournal project for AP English.</p>
+<p>To change your gender, select the button labeled <i>males</i>.</p>
 
 
-<article>
-  <h1>Rules for Boys</h1>
-  <p>Inspired by "The Rules".</p>
-</article>
+  </header>
 
+  <!-- About Section -->
+  
+    
+    <h2 class="w3-text-light-grey">A flight with a man.</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> Inspired by "Speaking While Female".</p>
+    <br><br>
+    <p><i>Hello. This is your captain speaking. Our flight will take off momentarily. While we do some last minute spot checks,  please make sure you are buckled up and that any overhead bags are secured. Please be sure that your underseat bags are secured as well. </i></p>
 
+<p>Hey, so… Have you been to where we’re headed before? I know I have, what a city. What. A. City. I mean it’s got the buildings and everything there but the history there! That civil war, you know-- it happened there. I saw it on the History Channel a few years back. </p>
 
-<article>
-  <h1>Games for Revolutionaries</h1>
-  <p>Inspired by Logan, the American Girl Boy.</p>
-</article>
+<p>Listen, oh-- yeah, my bag’s in the way, it does that. I’ll move it later maybe. But listen to this: the bricks they used to build the city were made with the same gloves that the masons used way back when. And the glass is made to mimic the crystal they had back then, too. I read it online, trust me, it’s true. Isn’t that insane?</p>
 
-<article>
-  <h1>How to Decorate a Boy's Room</h1>
-  <p>Inspired by painting my house.</p>
-</article>
+<p>  Oh, no, I don’t want to read that. A book? I’ve got all I need in my cranium. Listen, if there’s a plane crash, I don’t want to be caught dead with a book in my hands. I’ve got all I need to know from the History Channel and Reddit. And speaking of crashes, you saw the dew this morning, right? Too cold. I hope the pilots saw it this morning. In fact-- </p>
 
-<article>
-  <h1>Jobs for Franks</h1>
-  <p>Inspired by <i>Revolutionary Road.</i></p>
-</article>
+<p>Excuse me, miss, you, yeah, flight attendant woman? Do you reckon the pilot saw the dew this morning?... Because it was colder than normal…. Yeah, I get that. But he’s a pilot, he went to pilot school, I hope, and they tell them there that if the dew is even a hairline crack off of what it should be in the mornings that the flights could be all off…. You’ll tell him for me, will you? That’s fantastic. And could you get me a bag of pistachios too? And an eggplant parm for my friend here…. Yeah. Thanks. You’re a doll.</p>
 
-<article>
-  <h1>A Flight with a Man</h1>
-  <p>Inspired by "Speaking While Female".</p>
-</article>
+<p>What’d you think of her, eh? She had shooting stars in her eyes for me, I know it. It happens every time. You’ll see. Those attendants will be running down the aisles so fast to see me they’ll fall over each other like dominoes. Now that’s real in-flight entertainment. Now to just sit back and wait to get to Fredericksburg, Virginia. Get comfortable. </p>
 
+<p>What do you mean we’re not going there? That’s where this flight is headed. You best get off the plane now if you think you’re on the wrong trip. </p>
 
-<footer>Copyright &copy; W3Schools.com & for Ms. Florio.</footer>
+<p><i>Alright, ladies and gentlemen-- this is your captain, reporting that both your co-pilot and I are ready for take off. Our trip to Athens, Greece, should take about nine hours. Please get comfortable for the flight. Flight attendants and cabin crew, please prepare for gate departure.</i></p>
 
 
 
 
 
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+   
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> and Ms. Florio.</p>
+  <!-- End footer -->
+  </footer>
 
-
-
-<div class="demo" id="colors_demo">
-          <div class="tools">
-            <a href="#colors_sketch" data-download="png" style="float: right; width: 100px;">Download</a>
-          <a href="#colors_sketch" data-color="#f00" style="width: 10px; background: #f00;"></a> <a href="#colors_sketch" data-color="#ff0" style="width: 10px; background: #ff0;"></a> <a href="#colors_sketch" data-color="#0f0" style="width: 10px; background: #0f0;"></a> <a href="#colors_sketch" data-color="#0ff" style="width: 10px; background: #0ff;"></a> <a href="#colors_sketch" data-color="#00f" style="width: 10px; background: #00f;"></a> <a href="#colors_sketch" data-color="#f0f" style="width: 10px; background: #f0f;"></a> <a href="#colors_sketch" data-color="#000" style="width: 10px; background: #000;"></a> <a href="#colors_sketch" data-color="#fff" style="width: 10px; background: #fff;"></a> <a href="#colors_sketch" data-size="3" style="background: #ccc">3</a> <a href="#colors_sketch" data-size="5" style="background: #ccc">5</a> <a href="#colors_sketch" data-size="10" style="background: #ccc">10</a> <a href="#colors_sketch" data-size="15" style="background: #ccc">15</a> </div>
-          <canvas id="colors_sketch" width="800" height="300"></canvas>
-          <script type="text/javascript">
-            $(function() {
-              $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
-                $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
-              });
-              $.each([3, 5, 10, 15], function() {
-                $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
-              });
-              $('#colors_sketch').sketch();
-            });
-          </script>
-        </div>
-
-
-
+<!-- END PAGE CONTENT -->
 </div>
 
 </body>

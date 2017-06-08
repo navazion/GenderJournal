@@ -1,135 +1,72 @@
-<!--from W3 schools-->
-
 <!DOCTYPE html>
 <html>
-<head>
+<title>GenderJournal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-div.container {
-    width: 100%;
-    border: 1px solid gray;
-}
-
-header, footer {
-    padding: 1em;
-    color: white;
-    background-color: cornflowerblue;
-    clear: left;
-    text-align: center;
-}
-
-nav {
-    float: left;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-   
-nav ul a {
-    text-decoration: none;
-}
-
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-</head>
-<body>
+<body class="w3-black">
 
-<div class="container">
 
-<header>
-   <img src = "GJMale.png" style="height:200px">
-</header>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    
+<a href="../male/male.html"><img src="GJMale.png" alt="boy" height="200"></a>
   
-<nav>
-  <p><span class="w3-tag">This GenderJournal is for <select name="forma" onchange="location = this.value;">
+
+ <p><span class="w3-tag">This GenderJournal is for <select name="forma" onchange="location = this.value;">
  <option value="../male/male.html">males</option>
- <option value="../other/other.html">others</option>
  <option value="../female/female.html">females</option>
+ <option value="../other/other.html">others</option>
 </select></span>.</p>
-<br>
-<h4><b>Welcome!</b></h4>
-      <p>This is my GenderJournal project for AP English. This website was created off of a template made by W3 schools, edited by yours truly. To change your gender, select the button labeled <i>males</i>.</p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
 
-</nav>
-
-<article>
-  <h1>A Sheep's Adventure</h1>
-  <p>Inspired by a class discussion.</p>
-</article>
+<p>This is my GenderJournal project for AP English.</p>
+<p>To change your gender, select the button labeled <i>males</i>.</p>
 
 
-<article>
-  <h1>Rules for Boys</h1>
-  <p>Inspired by "The Rules".</p>
-</article>
+  </header>
 
+  <!-- About Section -->
+  
+    
+    <h2 class="w3-text-light-grey">A sheep's adventure.</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> Inspired by a class discussion.</p>
+    <br><br>
+    <p>I wake up, my eyes blinded by the light that is streaming in through the rafters. The ceiling has not been fixed in who-knows-how long, but no one else seems to mind. I shake off the sleep before getting up on my legs. I can hear others wake up around me, ready for another day at work, another day to toil and toss around.</p>
 
+<p>  I shuffle up to the door of my room and knock against it, hoping for some kind of attention. When I get none, I get concerned. There’s usually someone just beyond the door by now, someone waiting for me to be up and about. Today there isn’t.</p>
 
-<article>
-  <h1>Games for Revolutionaries</h1>
-  <p>Inspired by Logan, the American Girl Boy.</p>
-</article>
+<p>  I look around the room before realizing the obvious: my neighbor is gone. He’s just not there. Last night I was sure I fell asleep to his snores and now he is gone. </p>
 
-<article>
-  <h1>How to Decorate a Boy's Room</h1>
-  <p>Inspired by painting my house.</p>
-</article>
-
-<article>
-  <h1>Jobs for Franks</h1>
-  <p>Inspired by <i>Revolutionary Road.</i></p>
-</article>
-
-<article>
-  <h1>A Flight with a Man</h1>
-  <p>Inspired by "Speaking While Female".</p>
-</article>
-
-
-<footer>Copyright &copy; W3Schools.com & for Ms. Florio.</footer>
+<p>I desperately knock against the door again, trying to break free, but to no avail. It is at this point that I look up at the rafters again. Weak, weak, weak-- I need to get out. I need to get out. I need to get out….</p>
+   
 
 
 
 
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+   
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> and Ms. Florio.</p>
+  <!-- End footer -->
+  </footer>
 
-
-
-
-<div class="demo" id="colors_demo">
-          <div class="tools">
-            <a href="#colors_sketch" data-download="png" style="float: right; width: 100px;">Download</a>
-          <a href="#colors_sketch" data-color="#f00" style="width: 10px; background: #f00;"></a> <a href="#colors_sketch" data-color="#ff0" style="width: 10px; background: #ff0;"></a> <a href="#colors_sketch" data-color="#0f0" style="width: 10px; background: #0f0;"></a> <a href="#colors_sketch" data-color="#0ff" style="width: 10px; background: #0ff;"></a> <a href="#colors_sketch" data-color="#00f" style="width: 10px; background: #00f;"></a> <a href="#colors_sketch" data-color="#f0f" style="width: 10px; background: #f0f;"></a> <a href="#colors_sketch" data-color="#000" style="width: 10px; background: #000;"></a> <a href="#colors_sketch" data-color="#fff" style="width: 10px; background: #fff;"></a> <a href="#colors_sketch" data-size="3" style="background: #ccc">3</a> <a href="#colors_sketch" data-size="5" style="background: #ccc">5</a> <a href="#colors_sketch" data-size="10" style="background: #ccc">10</a> <a href="#colors_sketch" data-size="15" style="background: #ccc">15</a> </div>
-          <canvas id="colors_sketch" width="800" height="300"></canvas>
-          <script type="text/javascript">
-            $(function() {
-              $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
-                $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
-              });
-              $.each([3, 5, 10, 15], function() {
-                $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
-              });
-              $('#colors_sketch').sketch();
-            });
-          </script>
-        </div>
-
-
-
+<!-- END PAGE CONTENT -->
 </div>
 
 </body>

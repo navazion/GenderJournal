@@ -1,135 +1,105 @@
-<!--from W3 schools-->
-
 <!DOCTYPE html>
 <html>
-<head>
+<title>GenderJournal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-div.container {
-    width: 100%;
-    border: 1px solid gray;
-}
-
-header, footer {
-    padding: 1em;
-    color: white;
-    background-color: cornflowerblue;
-    clear: left;
-    text-align: center;
-}
-
-nav {
-    float: left;
-    max-width: 160px;
-    margin: 0;
-    padding: 1em;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-   
-nav ul a {
-    text-decoration: none;
-}
-
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
-}
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
 </style>
-</head>
-<body>
+<body class="w3-black">
 
-<div class="container">
 
-<header>
-   <img src = "GJMale.png" style="height:200px">
-</header>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    
+<a href="../male/male.html"><img src="GJMale.png" alt="boy" height="200"></a>
   
-<nav>
-  <p><span class="w3-tag">This GenderJournal is for <select name="forma" onchange="location = this.value;">
+
+ <p><span class="w3-tag">This GenderJournal is for <select name="forma" onchange="location = this.value;">
  <option value="../male/male.html">males</option>
- <option value="../other/other.html">others</option>
  <option value="../female/female.html">females</option>
+ <option value="../other/other.html">others</option>
 </select></span>.</p>
-<br>
-<h4><b>Welcome!</b></h4>
-      <p>This is my GenderJournal project for AP English. This website was created off of a template made by W3 schools, edited by yours truly. To change your gender, select the button labeled <i>males</i>.</p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
-      <p></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p>
 
-</nav>
-
-<article>
-  <h1>A Sheep's Adventure</h1>
-  <p>Inspired by a class discussion.</p>
-</article>
+<p>This is my GenderJournal project for AP English.</p>
+<p>To change your gender, select the button labeled <i>males</i>.</p>
 
 
-<article>
-  <h1>Rules for Boys</h1>
-  <p>Inspired by "The Rules".</p>
-</article>
+  </header>
 
+  <!-- About Section -->
+  
+    
+    <h2 class="w3-text-light-grey">Jobs for Franks.</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> Inspired by <i>Revolutionary Road</i>.</p>
+   <p>Written for my Creative Writing I class - also known as: “The Eyes of March”.</p>
+  <br><br>
 
+<p>The eyes of March were world renowned. As he analyzed the bark on a rainbow tree in the tropics by lamplight, he held one hand over his head to protect his hair from the rain. He examined the damp trees that stood in a congregation.</p>
 
-<article>
-  <h1>Games for Revolutionaries</h1>
-  <p>Inspired by Logan, the American Girl Boy.</p>
-</article>
+<p>“I can not tell the difference!” March declared, turning around. </p>
 
-<article>
-  <h1>How to Decorate a Boy's Room</h1>
-  <p>Inspired by painting my house.</p>
-</article>
+<p>The group of scientists behind him mumbled to themselves and scribbled on their clipboards. They had been studying the trees on the coasts of Hawaii for years, watching the bark as the trees changed from brown to rainbow in the rain. Rainbow Eucalyptus trees, as they were known by both the locals and in the scientific community, were theorized to be helpful in many ailments, even fatal diseases. Medicine was made from their bark for centuries, the locals explained, and it worked every time. “But March,” one of the senior scientists squeaked, “The trees must change in some way in the rain! Chemically, they must, because they change physically! How else could these things help cure anything?” </p>
 
-<article>
-  <h1>Jobs for Franks</h1>
-  <p>Inspired by <i>Revolutionary Road.</i></p>
-</article>
+<p>  “Yes, one would think the trees would change,” March nodded. “But it is just that: water on trees.” He turned on his heel, picked up his suitcase, and walked towards the scientists. His eyes were locked on his yellow car just outside of the tree line. </p>
 
-<article>
-  <h1>A Flight with a Man</h1>
-  <p>Inspired by "Speaking While Female".</p>
-</article>
+<p>The scientists parted for him and lightning struck somewhere nearby, illuminating the full moon. The scientists had been driving out to this spot for weeks, alongside March, the only known expert on this type of tree. They tested the theories, to no avail, and tonight was the last night. Tonight, the doctors had estimated, March’s daughter would succumb to a new disease, one without any available cures, unless, of course, the scientists could find one using the rainbow trees. </p>
 
+<p>“You can’t be serious!” the senior scientist insisted. March stopped suddenly. The scientists knew Julia, March’s daughter. They visited her every other day to check her vitals, take cell samples, and speak with her doctors. None of them wanted to see her go.</p>
 
-<footer>Copyright &copy; W3Schools.com & for Ms. Florio.</footer>
+<p>“But alas, I am serious. I saw no change in those trees. Those theories are simply false.” March glared, a rumble, a growl, building up inside him like a lion, and the senior scientist stepped back sheepishly. March continued on his walk to his car.</p>
 
+<p>The scientist deciphered the scratches on his clipboard as March was leaving. “Then there’s no cure. She won’t make it, March.”</p>
 
+<p>March sighed and pulled up the collar on his coat. The frayed ends of his sleeves were soaked and stuck to his hands like crawling spider webs as if his coat were trying to bring him into the dark abyss of the silk lining. “Just let me go back. If my daughter is going to die because you could not find a cure in time, I at least want to be there, by her side. There is nothing else to do.”</p>
+ 
+<p>  The papers exploded from his desk. He was unaccustomed to the weather, to the house, and to the gravity of the situation. He expected it to be cold, but it warmed up faster than he thought it would. His trip was unsettling as his car was smaller than he remembered, and now his knees whined. Unsatisfied with his desk’s information, he marched to his library. March flipped through every book on his countless shelves, searching for something- anything- that would help his daughter, Julia. He found nothing.  </p>
 
+<p>He heard her feet hit the floor for a second before he heard a thud. March pulled up every plank of wood flooring in his library, starting in the corner closest to the door. This revealed a novel of papers, years of research hidden from the public about those rainbow trees. The longhand littered on the pages was starting to drip away, wilting from the humidity.</p>
+ 
+<p>  A new set of footfalls pounded above March. He assumed they helped her up, but he was not prepared to go upstairs and check. He thought he would be able to face her, in her last moments, and tell her yes, I know they failed. But it is not my fault. He, however, stayed downstairs. The piles of papers under the planks of wood in his study were proving useless.</p>
+ 
+<p>  He stood and slammed his hands on his desk. The pens stacked there avalanched. His inkwell crashed to the floor, spilling across the valleys of pages: blood at the scene of the crime. The ink swelled like rivers over new land. The pages became illegible in the rapids. </p>
 
+ <p> A whisper from upstairs traveled down the thick, humid air. The three words hit March like the sun on snow; almost blinding him with light and yet still leaving him cold. “March, she’s gone.”</p>
 
+<p>  March hesitated, surrounded by the pools of ink on the floor. “Julia is only 15, she is not gone yet… I believe you are mistaken…” </p>
 
+<p>The embodiment of the whispers, an aide that March had hired to help with Julia, walked down the staircase and stood in the doorway. “She was 15.”</p>
 
+<p>  “And her cause of death?” March asked, looking up at the aide.</p>
 
-<div class="demo" id="colors_demo">
-          <div class="tools">
-            <a href="#colors_sketch" data-download="png" style="float: right; width: 100px;">Download</a>
-          <a href="#colors_sketch" data-color="#f00" style="width: 10px; background: #f00;"></a> <a href="#colors_sketch" data-color="#ff0" style="width: 10px; background: #ff0;"></a> <a href="#colors_sketch" data-color="#0f0" style="width: 10px; background: #0f0;"></a> <a href="#colors_sketch" data-color="#0ff" style="width: 10px; background: #0ff;"></a> <a href="#colors_sketch" data-color="#00f" style="width: 10px; background: #00f;"></a> <a href="#colors_sketch" data-color="#f0f" style="width: 10px; background: #f0f;"></a> <a href="#colors_sketch" data-color="#000" style="width: 10px; background: #000;"></a> <a href="#colors_sketch" data-color="#fff" style="width: 10px; background: #fff;"></a> <a href="#colors_sketch" data-size="3" style="background: #ccc">3</a> <a href="#colors_sketch" data-size="5" style="background: #ccc">5</a> <a href="#colors_sketch" data-size="10" style="background: #ccc">10</a> <a href="#colors_sketch" data-size="15" style="background: #ccc">15</a> </div>
-          <canvas id="colors_sketch" width="800" height="300"></canvas>
-          <script type="text/javascript">
-            $(function() {
-              $.each(['#f00', '#ff0', '#0f0', '#0ff', '#00f', '#f0f', '#000', '#fff'], function() {
-                $('#colors_demo .tools').append("<a href='#colors_sketch' data-color='" + this + "' style='width: 10px; background: " + this + ";'></a> ");
-              });
-              $.each([3, 5, 10, 15], function() {
-                $('#colors_demo .tools').append("<a href='#colors_sketch' data-size='" + this + "' style='background: #ccc'>" + this + "</a> ");
-              });
-              $('#colors_sketch').sketch();
-            });
-          </script>
-        </div>
+<p>  She cleared her throat. “Fatal disease. Almost murder, I daresay, without a cure, but there was nothing you could have done, March. She’s gone.”</p>
+
+<p>  March knew it was not his fault. But somehow, he had thought that just thinking she would live would work. She was going to be a leader, he knew it, everyone knew it. She had so much potential to be much more than some frail girl lost to a disease. She could have run an empire and even so, she was gone.</p>
+
+   
 
 
 
+
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+   
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a> and Ms. Florio.</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
 </div>
 
 </body>
